@@ -1,14 +1,14 @@
 var through = require("through2")
 var cssnext = require("cssnext")
 var gutil = require("gulp-util")
-var xtend = require("xtend")
+var objectAssign = require("object-assign")
 var PluginError = gutil.PluginError
 
 function transform(opts) {
   return function(file, enc, cb) {
     var contents
     var transformed
-    var options = xtend(opts || {})
+    var options = objectAssign({}, opts)
     if (file.isStream()) {
       return cb(
         new PluginError("gulp-cssnext", "streaming not supported")

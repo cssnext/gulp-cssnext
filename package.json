@@ -31,8 +31,8 @@
   "dependencies": {
     "cssnext": "^1.0.0",
     "gulp-util": "^3.0.0",
-    "through2": "^0.6.1",
-    "xtend": "~4.0.1"
+    "object-assign": "~4.0.1",
+    "through2": "^0.6.1"
   },
   "devDependencies": {
     "eslint": "^0.22.1",
